@@ -1,5 +1,5 @@
 """
-Extract line items from account statements of Bank of America into CSV file.
+Extract transactions from statements of Bank of America into a CSV file.
 Author: Yifeng Qiu
 Last Updated: 2022-09-22
 """
