@@ -5,9 +5,6 @@ import csv
 from typing import Dict, List
 from os import DirEntry
 
-# file = r'U:\PrivateData\BankAccount\BOA\Checking 2651\eStmt_2016-12-15.pdf'
-
-
 def seekto(lines: List[str], target, startline: int = 0) -> int:
     """
     Find the first occurrence of the target content and return its line number
@@ -138,7 +135,6 @@ def process_pdf_file(pdf_file: DirEntry, csv_writer) -> None:
 
 
 if __name__ == '__main__':
-    # statementFolder = r'U:\PrivateData\BankAccount\BOA\Checking 2651'
     statementFolder = os.environ['STATEMENT_FOLDER']
     with open('test.csv', 'a', newline='', encoding='utf-8') as csv_fp:
         csvWriter = csv.writer(csv_fp)
