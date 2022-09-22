@@ -159,7 +159,7 @@ def process_statement_section(content: List[str], section_label: str, csv_writer
     i = seekto(content, section_begin_label_pattern, startline)
     if i != -1:
         i += 2  # Skipping the header of the statement table
-        # now we are at the start of the table for the deposits
+        # now we are at the start of the table for the section
         result, i = extract_info(content, section_end_label_pattern, i)
         if i == -1:
             raise ValueError(f'Something went wrong with extracting {section_label}')
